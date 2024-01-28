@@ -1,0 +1,147 @@
+/* You can add global styles to this file, and also import other style files */
+$white: #ffffff;
+
+/* change the colors */
+$primary: #1e40af;
+$secondary: #2490d8;
+$danger: #dc4d4d;
+$success: #00b56a;
+$warning: #e6d000;
+// $info: #00bca5;
+$info: #1e40af;
+
+$body-bg: #ffffff;
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'typography';
+
+.btn-sm-danger-tw {
+    @apply text-sm rounded-lg p-2 bg-white font-bold text-red-600 hover:bg-red-50 cursor-pointer;
+}
+
+.btn-sm-primary-tw {
+    @apply text-sm rounded-lg p-2 bg-white font-bold hover:bg-gray-100 cursor-pointer text-gray-600;
+}
+
+.btn-close-tw {
+    @apply text-gray-800 rounded p-2 hover:bg-gray-200;
+}
+
+.btn-danger-tw {
+    @apply p-2 rounded hover:bg-red-50 text-red-800;
+}
+
+.btn-primary-tw {
+    @apply p-2 rounded hover:bg-blue-200 bg-blue-50 text-blue-800;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Golos Text';
+}
+
+.circular-btn {
+    border-radius: 50px !important;
+    min-width: 30px;
+    min-height: 30px;
+    border: none;
+    padding: 0px !important;
+
+    svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.emptyState {
+    padding: 100px !important;
+    min-height: 300px;
+    opacity: 0.5;
+
+    span {
+        margin-top: 20px !important;
+    }
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-fullscreen {
+    overflow: hidden !important;
+}
+
+.animated {
+    animation: rotate 0.5s linear infinite;
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.7px);
+    -webkit-backdrop-filter: blur(11.7px);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.spacer {
+    height: 80px;
+}
+
+.btn-glass {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: none !important;
+}
+
+.btn {
+    border-radius: 3px;
+    font-weight: 300 !important;
+}
+
+// input, textarea {
+//     border-radius: 3px !important;
+//     border: 1px solid rgba(0, 0, 0, 0.017);
+// }
+
+.modal-header {
+    border: none !important;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer {
+    border: none !important;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.modal-body {
+    padding-top: 20px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 3px !important;
+}
+
+@layer base {
+    html {
+        font-family: Poppins, system-ui, sans-serif;
+    }
+}
+
+body {
+    @apply bg-slate-200;
+}

@@ -1,0 +1,10 @@
+:host ::ng-deep {
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    padding: 0px !important;
+    overflow: hidden;
+}

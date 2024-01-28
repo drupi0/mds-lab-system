@@ -1,0 +1,128 @@
+table {
+    input {
+        min-width: 150px;
+    }
+}
+
+.field-container {
+    @apply bg-white rounded-lg px-5 py-3;
+    min-width: 1190px;
+}
+
+.card {
+    border: none;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.menu {
+    .d-flex {
+        width: 60px !important;
+    }
+
+    width: 10% !important;
+}
+
+.error {
+    &::after {
+        color: #e13868;
+        content: " *";
+    }
+}
+
+.error_input {
+    border: 1px solid #e13868 !important;
+}
+
+.dp-input {
+    color: #212529;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    text-align: left;
+    padding: 0.375rem 0.75rem;
+
+    &::after {
+        content: none !important;
+    }
+
+    min-width: 20ch;
+}
+
+.dropdown-item {
+    min-width: 200px;
+}
+
+:host ::ng-deep {
+
+    h1 {
+        font-size: 2em !important;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.8em;
+    }
+
+    h6 {
+        font-size: 0.7em;
+    }
+
+    .dropdown-menu {
+        max-height: 300px;
+        overflow: auto;
+    }
+
+    mds-datetimepicker {
+        max-width: 200px;
+    }
+
+    .error_dt {
+        .form-control {
+            border: 1px solid #e13868;
+        }
+    }
+
+    tbody {
+        td:not(.menu) {
+            text-align: center;
+
+            input {
+                width: 200px !important;
+            }
+
+            .dp-toggle {
+                color: #212529;
+                background-color: #ffffff;
+                border: 1px solid #ced4da;
+                text-align: left;
+                padding: 0.375rem 0.75rem;
+                width: 200px;
+
+                &::after {
+                    content: none !important;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
